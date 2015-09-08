@@ -4,6 +4,7 @@
     Author     : ryancorbin
 --%>
 
+<%@page import="calc1.calc1"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +14,6 @@
     </head>
     <body>
         <p>The area of your rectangle is:</p>
-        <p>${area}</p>
+        <p><%= request.getAttribute("area") %></p>
     </body>
 </html>
